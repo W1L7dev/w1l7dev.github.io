@@ -1,0 +1,195 @@
+nav {
+  background-color: #333;
+  color: white;
+  display: flex;
+  top: 0;
+  width: 100%;
+}
+
+nav a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  width: calc(100% / 3);
+}
+
+nav a:hover {
+  background-color: black;
+}
+
+header {
+  overflow: hidden;
+  background-image: url("../assets/background.svg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 10%;
+}
+
+header h2 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0;
+}
+
+header .btn {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+header .btn:hover {
+  background-color: white;
+  color: black;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 50px 0;
+}
+
+footer p, footer h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0;
+}
+
+footer a {
+  color: white;
+}
+
+#about {
+  background-color: #333;
+  color: white;
+  padding: 50px 0;
+}
+
+#about h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0;
+}
+
+#about h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0;
+}
+
+#about p {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0;
+}
+
+#projects {
+  color: white;
+  background-color: black;
+  padding: 50px 0;
+}
+
+#projects h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0;
+}
+
+#projects h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0;
+}
+
+#projects .projects {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+#projects .project-container {
+  width: calc(100% / 3);
+  padding: 10px;
+  margin: 10px;
+}
+
+#projects img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+#projects a,
+#projects a:hover {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#contact {
+  background-color: #333;
+  color: white;
+  padding: 50px 0;
+}
+
+#contact h1 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0;
+}
+
+#contact p {
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+#contact a {
+  color: white;
+  text-decoration: none;
+}
