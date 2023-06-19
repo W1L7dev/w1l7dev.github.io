@@ -13,7 +13,7 @@ nav a {
   text-decoration: none;
   font-size: 17px;
   font-weight: bold;
-  width: calc(100% / 3);
+  width: calc(100%/3);
 }
 
 nav a:hover {
@@ -119,6 +119,7 @@ footer a {
   color: white;
   background-color: black;
   padding: 50px 0;
+  text-align: center;
 }
 
 #projects h1 {
@@ -135,30 +136,19 @@ footer a {
   margin-top: 0;
 }
 
-#projects .projects {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: center;
+#projects table {
+  margin: 0 auto;
+  width: 100%;
 }
 
-#projects .project-container {
-  width: calc(100% / 3);
+#projects table tr td {
   padding: 10px;
-  margin: 10px;
 }
 
 #projects img {
   max-width: 300px;
   width: 100%;
   height: auto;
-}
-
-#projects a,
-#projects a:hover {
-  color: white;
-  font-size: 1.5rem;
-  font-weight: 700;
 }
 
 #contact {
