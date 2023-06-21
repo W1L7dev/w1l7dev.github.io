@@ -183,3 +183,17 @@ footer a {
   color: white;
   text-decoration: none;
 }
+
+@media only screen and (max-width:768px) {
+  table {
+    width: 100%;
+  }
+  table tr td {
+    display: block;
+    width: 100%;
+  }
+  table tr td img {
+    width: 100%;
+    height: auto;
+  }
+}
