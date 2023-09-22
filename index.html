@@ -4,78 +4,103 @@
     <title>W1L7dev</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta
-      name="description"
-      content="W1L7dev is a JavaScript, Python and Rust dev."
-    />
-    <link rel="icon" href="assets/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script src="https://kit.fontawesome.com/3ede723c0e.js" crossorigin="anonymous"></script>
-    <!-- For some reason, styles in the css file dont seem to work -->
-
+    <link rel="icon" href="./assets/favicon.ico" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/3ede723c0e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/script.js"></script>
   </head>
   <body>
     <main>
-      <section class="card">
-        <img src="assets/favicon.ico" alt="profile picture">
+      <section>
+        <img src="assets/pfp.png" alt="profile picture" />
         <h1>W1L7dev</h1>
-        <p><b>Python</b> Dev 🐍</p>
-        <hr>
-        <article class="icons">
-          <a href="https://github.com/W1L7dev" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://w1l7.itch.io/" target="_blank"><i class="fab fa-itch-io"></i></a>
-          <a href="mailto:w1l7dev@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-        </art>
+        <h2>Python developer</h2>
+        <article class="tabs">
+          <div class="tabarea">
+            <button onclick="openPage('About', this)" class="tab" id="default">
+              <i class="fa fa-user"></i> About
+            </button>
+            <button onclick="openPage('Projects', this)" class="tab">
+              <i class="fa fa-desktop"></i> Projects
+            </button>
+            <button onclick="openPage('Contact', this)" class="tab">
+              <i class="fa fa-envelope"></i> Contact
+            </button>
+          </div>
+          <div id="About" class="content">
+            <div class="scrollable">
+              <h3>About</h3>
+              <p>
+                Hey! I'm Will, a Python developer. I'm a canadian student who
+                enjoys programming. I started programming back when I was 12,
+                starting by learning HTML and CSS. I never tried to learn
+                JavaScript properly, but I still know some stuff. Then, a year
+                later, I decided that I wanted to learn Python, and so I did!
+                Other than that, I'm a talented musician. I play the guitar and
+                bass guitar, but my main instrument is the piano.
+              </p>
+              <h4>Languages, Tools && Frameworks</h4>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Python</li>
+                <li>Git</li>
+                <li>UNIX</li>
+                <li>SQL & MySQL</li>
+                <li>VSCode</li>
+                <li>Figma</li>
+                <li>PyGame</li>
+                <li>FastAPI</li>
+                <li>Beautiful Soup</li>
+                <li>PIL</li>
+              </ul>
+            </div>
+          </div>
+          <div id="Projects" class="content">
+            <div class="scrollable">
+              <h3>Projects</h3>
+
+              <div class="project">
+                <h4>Devbot</h4>
+                <p>Devbot is a general-purpose Discord bot made with Nextcord and Python</p>
+                <a href="/devbot" target="_blank"><i class="fas fa-globe"></i> Homepage</a>
+              </div>
+              <div class="project">
+                <h4>Logmaster</h4>
+                <p>A simple logging library for Python</p>
+                <a href="https://pypi.org/project/logmaster" target="_blank"><i class="fab fa-python"></i> PyPi</a>
+              </div>
+              <div class="project">
+                <h4>Game of Life</h4>
+                <p>An implementation of Conway's Game of Life with Pygame</p>
+                <a href="https://github.com/W1L7dev" target="_blank"><i class="fab fa-github"></i> Github</a>
+              </div>
+            </div>
+          </div>
+          <div id="Contact" class="content">
+            <div class="scrollable">
+              <h3>Contact</h3>
+              <p>
+                You can contact me by sending me an email at
+                <a class="email" href="mailto:w1l7dev@gmail.com">w1l7dev@gmail.com</a>
+              </p>
+          </div>
+        </article>
       </section>
-      <section class="projects">
-        <h1>Projects</h1>
-        <article class="item">
-          <h2>W1L7dev</h2>
-          <p>My personal website.</p>
-          <hr>
-          <h3>Languages</h3>
-          <div class="langs">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-          </div>
-          <hr>
-          <h3>Links</h3>
-          <div class="urls">
-            <a href="https://w1l7dev.github.io/" target="_blank"><i class="fas fa-globe"></i></a>
-            <a href="https://github.com/W1L7dev/W1L7dev.github.io" target="_blank"><i class="fab fa-github"></i></a>
-          </div>
-        </article>
-        <article class="item">
-          <h2>Logmaster</h2>
-          <p>A logging library.</p>
-          <hr>
-          <h3>Languages</h3>
-          <div class="langs">
-            <i class="fab fa-python"></i>
-          </div>
-          <hr>
-          <h3>Links</h3>
-          <div class="urls">
-            <a href="https://pypi.org/project/logmaster" target="_blank"><i class="fas fa-box"></i></a>
-            <a href="https://github.com/W1L7dev/logmaster" target="_blank"><i class="fab fa-github"></i></a>
-          </div>
-        </article>
-        <article class="item">
-          <h2>Devbot</h2>
-          <p>A general-purpose discord bot.</p>
-          <hr>
-          <h3>Languages</h3>
-          <div class="langs">
-            <i class="fab fa-python"></i>
-          </div>
-          <hr>
-          <h3>Links</h3>
-          <div class="urls">
-            <a href="https://github.com/W1L7dev/devbot" target="_blank"><i class="fab fa-github"></i></a>
-          </div>
-        </article>
-        <!--<a href="projects.html" class="btn">More...</a>-->
-      </section>
+      <div class="socials">
+        <a href="https://github.com/W1L7dev" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://w1l7.itch.io" target="_blank">
+          <i class="fab fa-itch-io"></i>
+      </div>
     </main>
+    <script>
+      document.getElementById("default").click();
+    </script>
   </body>
 </html>
