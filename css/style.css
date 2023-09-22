@@ -140,35 +140,35 @@ section .tabs .content h4 {
 
 section .tabs .content .project {
   background-color: rgba(39, 39, 39, 0.5);
-    padding: 20px;
-    border-radius: 20px;
-    text-align: center;
-    margin: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 10px;
 }
 
 section .tabs .content .project a {
-    display: inline-block;
-    padding: 0.5em 1em;
-    text-decoration: none;
-    background: rgb(112, 112, 112);
-    color: white;
-    border-bottom: solid 4px rgb(88, 88, 88);
-    border-radius: 3px;
-    transition: .4s;
-    margin-top: 10px;
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: rgb(112, 112, 112);
+  color: white;
+  border-bottom: solid 4px rgb(88, 88, 88);
+  border-radius: 3px;
+  transition: 0.4s;
+  margin-top: 10px;
 }
 
 section .tabs .content .project a:hover {
-    background: rgb(88, 88, 88);
-    color: white;
-    border-bottom: solid 4px rgb(112, 112, 112);
-    text-decoration: none;
+  background: rgb(88, 88, 88);
+  color: white;
+  border-bottom: solid 4px rgb(112, 112, 112);
+  text-decoration: none;
 }
 
 section .tabs .content .project a:active {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);
-    border-bottom: none;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
 }
 
 #About {
@@ -189,20 +189,29 @@ section .tabs .content .project a:active {
 }
 
 .socials {
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    width: 33.33%;
-    margin: 20px;
-    border-radius: 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  width: 33.33%;
+  margin: 20px;
+  border-radius: 10px;
 }
 
 .socials a {
-    display: inline-block;
-    padding: 0.5em 1em;
-    text-decoration: none;
-    color: white;
-    border-radius: 3px;
-    transition: .4s;
-    margin-top: 10px;
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: white;
+  border-radius: 3px;
+  transition: 0.4s;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  section {
+    width: 90%;
+  }
+  .socials {
+    width: 90%;
+  }
 }
